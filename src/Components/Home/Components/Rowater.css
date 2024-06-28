@@ -1,0 +1,17 @@
+.RowaterDiv{
+    overflow: hidden;
+   
+}
+.RowaterDiv img{
+    
+    transition: all 0.2s linear;
+}
+.RowaterDiv img:hover{
+    scale: 1.05;
+}
+@media screen and (max-width:799px) {
+    .RowaterDiv img{
+        width: 100%;
+        padding-top: 10px !important;
+    }
+}

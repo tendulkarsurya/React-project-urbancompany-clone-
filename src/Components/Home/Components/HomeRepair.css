@@ -1,0 +1,32 @@
+
+.repairCaro{
+    width: 100%;
+}
+.imageDiv{
+    overflow: hidden;
+}
+.repairCaro p{
+    padding: 5px 0px;
+    font-weight: 700;
+}
+.repairCaro img{
+    border-radius: 8px;
+    transition: all 0.2s linear;   
+}
+.repairCaro img:hover{
+    scale: 1.05;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:799px) {
+    .repairCaro{
+        padding: 0 !important;
+        /* padding-top: 10px !important; */
+    }
+    .imageDiv img{
+        width: 95%;
+    }
+    .repairCaro p{
+       text-align: center;
+    }
+}

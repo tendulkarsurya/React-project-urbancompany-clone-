@@ -1,0 +1,280 @@
+/* .navigationSlide{
+    overflow-x: hidden; 
+} */
+
+.scroll1 {
+    overflow: hidden;
+}
+
+.scroll1 img {
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+}
+
+.scroll1 img:hover {
+    scale: 1.02;
+}
+
+/* -------------------------------senoir------ */
+
+
+.scroll1ul>li {
+    position: relative;
+    left: -12px;
+    width: 90%;
+}
+
+.left_below_but {
+    padding: 5px 25px;
+    outline-style: none;
+    border-style: none;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.left_below_but_ser{
+    padding: 5px 25px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 8px;
+    background-color:#6337da ;
+    font-weight: 600;
+    color: white;
+    
+    
+}
+
+video{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ------------------------ */
+.textdiv {
+    line-height: 5px;
+    width: 75%;
+
+}
+
+.scrolll {
+    width: 90%;
+}
+
+.scroll2Text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.scrollbtn {
+    position: relative;
+    left: 85px;
+    top: 10px;
+    width: 70px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    font-weight: 500;
+}
+
+.empty {
+    width: 100%;
+    border: 0.1px dashed rgb(228, 227, 227);
+}
+
+.btndiv {
+    width: 50%;
+}
+
+
+/* -------------------------- */
+
+
+/* .scroll3div{
+    width: 70%;
+} */
+
+.anti-rust {
+    position: relative;
+    top: 25px;
+    overflow: hidden;
+}
+
+.serviceScrollimg {
+    transition: all 0.2s linear;
+    border-radius: 10px;
+}
+
+.serviceScrollimg:hover {
+    scale: 1.02;
+}
+
+.scrollbtn2 {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    width: 70px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    font-weight: 500;
+}
+
+/* ----------------------------------------- */
+
+.stick {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70px;
+}
+
+@media screen and (max-width:799px) {
+    .scrollbtn {
+        position: relative;
+        left: 20px !important;
+        top: 30px !important;
+    }
+
+
+    .scrolll {
+        /* width: auto; */
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .stick {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .rytreview {
+        margin-top: 5px !important;
+    }
+
+
+    .textdiv {
+        line-height: 5px;
+        width: 75%;
+    }
+
+    .btndiv {
+        position: relative;
+        bottom: 4px;
+        width: 40%;
+    }
+
+    /* .navigationSlide {
+        overflow-x: hidden;
+
+    } */
+
+    
+    .rightReviews{
+        padding: 0 !important;
+    }
+    /* -------------------------- */
+      
+    .middleScroll {
+        padding: 0 !important;
+        margin: 0;
+    }
+    .tScroll{
+        padding: 5px !important;
+    }
+    .wall{
+        padding: 5px !important;
+    }
+    .cartDiv{
+        margin: 0 !important;
+    }
+    .ROO{
+        padding: 5px !important;
+    }
+}
+
+
+/* -------------------------------------------- */
+
+.cartOffer{
+    list-style: none;
+}
+.textBorder{
+    line-height: 20px;
+    border-radius: 10px;
+    
+}
+
+.loginbtn{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #572AC8;
+    color: white;
+    font-weight: 600;
+}
+
+/* ----------------------------------- */
+
+.increment{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.minus,.plus{
+    border: none;
+    background-color: white;
+    color: #572AC8;
+    
+}
+.valuesbtn{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+}
+.valuesbtn>p{
+    position: relative;
+    top: 8px;
+}
+
+.viewCart{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #572AC8;
+    color: white;
+    font-weight: 600;
+}
+
+.paymentCost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payOptions{
+    list-style: none;
+    line-height: 40px;
+}
+.account{
+    border-radius: 10px;
+    position: sticky;
+    top: 15%;
+}
+
+.paybtn{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #572AC8;
+    color: white;
+    font-weight: 600;
+
+}

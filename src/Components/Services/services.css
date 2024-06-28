@@ -1,0 +1,294 @@
+/* ---------------------- Header.jsx----------------------------*/
+.hearder_main {
+    background: linear-gradient(#d1e3fc 55%, #f3f8ff);
+    padding: 15px 0;
+}
+
+.hearder_sub_main {
+    display: flex;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+    /* scale: 0.8; */
+}
+
+.button_hearder {
+    padding: 15px;
+    border-radius: 22px;
+    width: max-content;
+    border-style: none;
+    outline-style: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
+        0 -1px 2px rgba(0, 0, 0, 0.420);
+    font-size: larger;
+    background-color: rgba(65, 105, 225, 0.26);
+    font-weight: 500;
+}
+
+.button_hearder:hover {
+    background-color: royalblue;
+    color: white;
+    font-weight: 600;
+
+}
+
+.button_hearder:active {
+    background-color: rgba(65, 225, 105, 0.39);
+    color: black;
+
+}
+
+.img_count {
+    position: absolute;
+    bottom: 3%;
+    right: 26%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 12px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.420),
+        0 -1px 6px rgba(0, 0, 0, 0.420);
+    scale: 0.7;
+}
+
+.img_count div {
+    margin: 10px;
+}
+
+.para {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.countval,
+h4 {
+    margin: 10px 0;
+}
+
+.rec_ico {
+    height: 40px;
+    width: 40px;
+    fill: #3B82F6;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
+        0 -1px 2px rgba(0, 0, 0, 0.420);
+}
+
+
+/* ---------------------- Header.jsx----------------------------*/
+
+@media screen and (max-width : 799px) {
+
+    /* ---------------------- Header.jsx----------------------------*/
+    .img_count {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .hearder_main {
+        padding: 0;
+    }
+
+    .hearder_sub_main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* ---------------------- Header.jsx----------------------------*/
+
+}
+
+
+
+/* ***************************************************** */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.service_bg {
+    background-image: url("https://devx.work/blog/wp-content/uploads/2022/02/petr-magera-Ugnm0F4e00U-unsplash-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.service_bg>h1 {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.outer_container {
+    display: flex;
+}
+
+.service_list_container {
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.service_list_container ul li {
+    font-size: 18px;
+    list-style: none;
+    line-height: 50px;
+    /* font-weight: bold; */
+    margin: 5px;
+    text-align: start;
+}
+
+.service_list_container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.service_list_container ul li a:hover {
+    color: blue;
+}
+
+.services_details {
+    /* flex:1 */
+    /* background-color: white; */
+
+}
+
+.service_container_main {
+    display: flex;
+    background-color: white;
+
+
+}
+
+.service_icons {
+    height: 25px;
+    width: 25px;
+}
+
+/* --------------------ac service----------- */
+.ac_services_main {
+    margin: 10px;
+}
+
+.ac_service_text {
+    text-align: start;
+}
+
+.ac_service_cards {
+    width: 100%;
+
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card_animation {
+    /* overflow: hidden; */
+    transition: all 0.5s linear;
+}
+
+.card_animation:hover {
+    scale: 1.06;
+}
+
+#cardHeight {
+    height: 117px;
+}
+
+.ac_service_cards a {
+    text-decoration: none;
+}
+
+.ac_service_grid {
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.grids {
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 10px;
+    width: 32%;
+    border-radius: 5px;
+    background-color: #DBEAFE;
+}
+
+.grid_rows {
+    gap: 14px;
+    padding: 7px;
+}
+
+.grid_rows a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.ac_grid_container {
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width:799px) {
+    .service_bg {
+        width: auto;
+    }
+
+    .service_list_container ul li {
+        line-height: 35px;
+    }
+
+    .grids {
+        width: 100%;
+    }
+
+    .service_container_main {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #cardHeight {
+        height: 230px;
+    }
+}
+
+.main_service_container {
+    position: relative;
+}
+
+
+.display-hm,
+.display-ps,
+.display-ls,
+.display-i,
+.display-c,
+.display-p {
+    display: none;
+    z-index: 2;
+    /* position: absolute; */
+}

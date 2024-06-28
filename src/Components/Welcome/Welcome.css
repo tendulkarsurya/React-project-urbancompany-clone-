@@ -1,0 +1,117 @@
+.main_welcome_page {
+    height: 87.5vh;
+    background: linear-gradient(#D1E3FC, #eef5ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* perspective: 900; */
+
+}
+
+.Mainpage {
+    transition: all 0.8s linear;
+    height: 85%;
+    width: 35%;
+    transform-style: preserve-3d;
+    perspective: 800;
+
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.015);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+
+}
+
+/* .Mainpage:hover {
+    transform: rotateY(180deg);
+} */
+
+.login,
+.signup {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+
+.signup {
+    transform: rotateX(180deg);
+}
+
+
+.login form {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.signup form {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.buttons_welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+input {
+    border-style: none;
+    width: 90%;
+    outline-style: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.userName {
+    width: 100%;
+}
+
+.Password {
+
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+
+.butn1,.butn2 {
+    padding: 8px 12px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.butn1:hover {
+    background-color: lightgreen;
+}
+
+.butn2:hover {
+    background-color: rgb(249, 251, 108);
+}
+
+@media screen and (max-width: 799px) {
+    .Mainpage {
+        height: 85%;
+        width: 100%;
+        margin: 10PX
+    }
+}

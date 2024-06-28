@@ -1,0 +1,313 @@
+.bg_container {
+    border: 2px solid black;
+    background-image: url("https://img.freepik.com/premium-photo/repair-renovation-maintenance-services-hand-hold-digital-hologram-smart-home-sign-city-dark-blurred-background-smart-home-automation-control-system_486333-3861.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+}
+.AboutusMain{
+    background: linear-gradient(#d1e3fc 15%, #f3f8ff 85%)
+}
+.bg_container h1 {
+    color: white;
+    padding: 40px 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about_mission h2,
+.about_vision h2,
+.about_values {
+    padding: 20px;
+    text-align: center;
+}
+
+.mission_container {
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.mission_container_img {
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mission_container_textarea {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.img_div,
+.vision_img_div {
+    overflow: hidden;
+}
+
+.img_div img {
+    width: auto;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+
+.vision_img_div img {
+    /* width: auto; */
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+
+.vision_img_div img:hover {
+    scale: 1.05;
+}
+
+.img_div img:hover {
+    scale: 1.05;
+
+}
+
+.text_div {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+/* ---------------------------------- */
+.vision_container {
+    display: flex;
+    gap: 40px;
+}
+
+.vision_img_div img {
+    width: 110%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.vision_container_img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.vision_text_div {
+    width: 100%;
+    padding-left: 20px;
+    text-align: start;
+}
+
+/* -------------------------------- */
+
+.owl_curosel {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.bg_card {
+    width: 100%;
+}
+
+.card_body {
+    box-shadow: 2px 5px 4px black;
+    /* border-radius: 10px; */
+    text-align: start;
+}
+
+.card_body:hover {
+    color: white;
+    background-color: #5a4094;
+}
+
+.card_link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --------------- */
+.outer_footer {
+    background-color: #DBEAFE;
+    padding-top: 20px;
+}
+
+.footer_part {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(0, 0, 0)
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1.3rem;
+}
+
+.social_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+    width: 100%
+}
+
+.footer_quick {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.footer_quick ul {
+    padding: 0px;
+}
+
+.social_icons {
+    height: 40px;
+    width: 23px;
+    color: rgb(10, 10, 10);
+    transition: all 0.3s linear;
+}
+
+.social_icons:hover {
+    transform: rotate(360deg);
+    color: darkblue;
+}
+
+.icon_list {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quick_list {
+    list-style: none;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.quick_list_links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.card_responsive {
+    width: 22rem;
+}
+
+.footer_social ul li:hover,
+.quick_list_links a:hover,
+.footer_contact p:hover {
+    color: blue;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.footer_part h3 {
+    color: black;
+}
+
+@media screen and (max-width:799px) {
+
+    .about_mission h2 {
+        padding: 5px !important;
+    }
+
+    .mission_container {
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+
+    .img_div img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .text_div {
+        width: 100%;
+        margin-top: 8px;
+        padding: 0 !important;
+    }
+
+    .about_vision h2 {
+        padding: 5px !important;
+    }
+
+    .vision_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0 !important;
+    }
+
+    .vision_img_div img {
+        width: 100%;
+        height: 100% !important;
+        padding: 0;
+    }
+
+    .vision_text_div {
+        width: 100%;
+        margin-top: 8px;
+        padding: 0 !important;
+    }
+
+    .about_values {
+        padding: 0 !important;
+    }
+
+    .owl_curosel {
+        width: 100%;
+        padding-top: 5px !important;
+        margin: 0px;
+    }
+
+    .card_responsive {
+        width: 21.8rem;
+    }
+
+    .footer_part {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .footer_social {
+        width: 100%;
+        gap: 0px !important;
+    }
+
+    .social_links {
+        width: 80%;
+        padding: 0;
+    }
+
+    .footer_quick {
+        width: 100%;
+    }
+
+    .quick_list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer_contact {
+        width: 100%;
+        padding: 0;
+    }
+}

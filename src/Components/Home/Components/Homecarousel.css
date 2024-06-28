@@ -1,0 +1,22 @@
+.caro{
+    /* height: 230px; */
+    width: 98%;
+    transition: all 0.2s linear;
+}
+.caro:hover{  
+    scale: 1.04;
+}
+
+.bbb{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 98%;
+}
+@media screen and (max-width:799px) {
+    .carouselmain{
+        padding-top: 0 !important;
+    }
+    .caro{
+        width: 100%;
+    }
+}

@@ -1,0 +1,492 @@
+/* .hearder_main,
+.triangle_home_main {
+    /* background: linear-gradient(#d1e3fc 55%, #f3f8ff 75%, #fafbfd 100%) */
+
+    /* background: linear-gradient(#d1e3fc 55%, #f3f8ff) */
+ 
+.homeurban{
+    background: linear-gradient(#d1e3fc 55%, #f3f8ff )
+
+}
+
+
+/* ---------------------- Header.jsx----------------------------*/
+/* .hearder_sub_main {
+    display: flex;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+}
+
+.button_hearder {
+    padding: 15px;
+    border-radius: 22px;
+    width: max-content;
+    border-style: none;
+    outline-style: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
+        0 -1px 2px rgba(0, 0, 0, 0.420);
+    font-size: larger;
+    background-color: rgba(65, 105, 225, 0.26);
+    font-weight: 500;
+}
+
+.button_hearder:hover {
+    background-color: royalblue;
+    color: white;
+    font-weight: 600;
+
+}
+
+.button_hearder:active {
+    background-color: rgba(65, 225, 105, 0.39);
+    color: black;
+
+}
+
+.img_count {
+    position: absolute;
+    bottom: 18%;
+    right: 18%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 12px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.420),
+        0 -1px 6px rgba(0, 0, 0, 0.420);
+}
+
+.img_count div {
+    margin: 10px;
+}
+
+.para {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.countval,
+h4 {
+    margin: 10px 0;
+}
+
+.rec_ico {
+    height: 40px;
+    width: 40px;
+    fill: #3B82F6;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
+        0 -1px 2px rgba(0, 0, 0, 0.420);
+} */
+
+
+
+/* ----------------------pop up.jsx----------------------------*/
+
+.modal {
+    z-index: 999999999
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.model_flot_search {
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.search_bar {
+    border-style: none;
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.search_bar:focus {
+
+    border-style: none;
+    outline-style: none;
+}
+
+.search_bar:focus>.model_flot_search {
+    border: 1px solid green;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.body {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.all_citys {
+    overflow-x: scroll;
+}
+
+
+.list_icon {
+    width: auto;
+}
+
+.all_citys ol li {
+    display: flex;
+    flex-direction: column;
+    column-gap: 3px;
+    align-items: center;
+}
+
+.model_flot_label {
+    padding: 10px;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+/* .modal-content {
+    position: relative;
+    top: 60px;
+    left: -200px;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    width: 900px;
+
+} */
+
+.all_citys ol {
+    list-style: none;
+    display: flex;
+    column-gap: 25px;
+}
+
+.hr_model {
+    border: 2px solid black;
+    margin: 0;
+}
+
+.all_citys_body {}
+
+.all_citys_body_h4 {
+    padding: 0;
+    text-align: center;
+}
+
+.all_citys_body_container {
+    padding: 10px;
+    font-size: 18px;
+    display: grid;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------Triangle_Hom.jsx----------------------------*/
+.triangle_home_sub {
+    width: 50%
+}
+
+.home_list {
+    margin-top: 30px;
+}
+
+#form {
+    border-radius: 30px;
+    height: 60px;
+}
+
+.home_para {
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+    /* gap: 10px; */
+    flex-direction: column;
+}
+
+.col_last {
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    width: 34%;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #E5E7EB;
+}
+
+#Col_800 {
+    width: 40%;
+}
+
+/* ----------------------Triangle_App.jsx----------------------------*/
+.Triangle_app_main {
+    padding: 20px 0;
+    background: linear-gradient(#f3f8ff 55%, #fdfdfd 75%)
+}
+
+.img_center_text {
+    display: grid;
+    place-items: center;
+    padding: 25px 15px 10px 15px;
+}
+
+.img_mix_mode {
+    /* mix-blend-mode: multiply; */
+    height: 500px;
+    width: 500px;
+
+}
+
+.app_main {
+    display: flex;
+    width: 100;
+}
+
+.app_text {
+    width: 100%;
+    /* line-height: 35px;  */
+    padding: 10px;
+}
+
+.app_text_para {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.app_qr {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.qr_text {
+    padding: 0px 10px;
+}
+
+#qr_android {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ---------------------- cards.jsx----------------------------*/
+.cards {
+    /* padding: 20px 20px 20px 45px; */
+    align-items: center;
+}
+.cardBody{
+    background-color: rgb(240, 239, 239);
+}
+.cardsl {
+    width: 98%;
+}
+
+/* ---------------------- other home.jsx----------------------------*/
+.container_contaus {
+    text-align: center;
+    padding: 0px 10px !important;
+
+}
+
+
+.inconsty {
+    height: 50px;
+    width: 50px;
+}
+
+/* ---------------------- other home.jsx----------------------------*/
+
+
+@media screen and (max-width : 799px) {
+    /* ---------------------- Header.jsx----------------------------*/
+
+    /* .hearder_sub_main {
+        display: flex;
+        flex-direction: column-reverse;
+
+    } */
+
+
+
+
+
+
+
+    /* ---------------------- popup.jsx----------------------------*/
+
+
+    .cardsl {
+        width: 98%;
+    }
+
+    .all_citys {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .all_citys ol {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 10px;
+
+    }
+
+    .list_icon {
+        display: none;
+    }
+
+    .all_citys ol li {
+
+        padding: 10px;
+        width: 100%;
+        border: 1px solid black;
+
+    }
+
+    .cards {
+        padding: 0 !important;
+        align-items: center;
+
+
+    }
+
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: none;
+        pointer-events: auto;
+        outline: 0;
+        position: relative;
+
+        left: 0;
+
+
+    }
+
+    .row_res {
+        row-gap: 5px;
+    }
+
+    .col {
+        padding: 5px;
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+
+    .d-block {
+        padding: 5px;
+        height: auto;
+        /* width: 800px; */
+    }
+
+    .cards_parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+   
+
+
+
+
+
+    /* ----------------------Triangle_Hom.jsx----------------------------*/
+
+
+    .triangle_home_sub {
+
+        width: 100%;
+    }
+
+    .home_list {
+        margin: 0;
+    }
+
+    .home_para {
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .col_last {
+        font-size: 13px;
+        padding: 10px;
+        width: 54%;
+        margin: 5px;
+    }
+
+    /* ----------------------Triangle_App.jsx----------------------------*/
+    .app_main {
+        display: flex;
+        flex-direction: column;
+        width: 100;
+    }
+
+    .img_center_text {
+        display: grid;
+        place-items: center;
+        padding: 15px;
+    }
+
+    .app_text {
+        width: 100%;
+        /* line-height: 25px ; */
+        padding: 0px;
+    }
+
+    .app_img img {
+        width: 100%;
+    }
+
+    .app_text_para,
+    .app_qr {
+        margin: 0px;
+        padding: 0px;
+    }
+}
