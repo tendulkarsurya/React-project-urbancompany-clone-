@@ -39,7 +39,7 @@ function About() {
           <div className="achivements">
             <div className="d-flex gap-5 ">
 
-              <div className="d-flex flex-column align-items-center ">
+              <div className="d-flex flex-column align-items-start ">
                 <h2>45,000+</h2>
                 <p>Trained Professionals</p>
               </div>
@@ -50,11 +50,11 @@ function About() {
 
             </div>
             <div className="d-flex gap-5  " >
-              <div className="d-flex flex-column align-items-center ">
+              <div className="d-flex flex-column align-items-start ">
                 <h2>10 Million+</h2>
                 <p>Happy Cusomers</p>
               </div>
-              <div className="d-flex flex-column align-items-center ">
+              <div className="d-flex flex-column align-items-center " id="countries">
                 <h2>3</h2>
                 <p>Countries</p>
               </div>
@@ -81,13 +81,13 @@ function About() {
                 <p className="para">With TechEon you will find the best Professionals in the area, whatever your need.</p>
                 <div className="bragSection">
                   <div className="left">
-                    <span className="stamp mt-1"  data-aos='flip-up'><LuStamp className="stampIcon" /></span>
+                    <span className="stamp mt-1" data-aos='flip-up'><LuStamp className="stampIcon" /></span>
                     <div className="vline">
                     </div>
                   </div>
                   <div className="right mt-1">
                     <h5>Verified & vetted professionals</h5>
-                    <p>Get service from trusted and verified partner with professional skills and experience.</p>
+                    <p>Get service from trusted and verified partner with professional skills.</p>
                   </div>
                 </div>
                 <div className="bragSection">
@@ -98,7 +98,7 @@ function About() {
                   </div>
                   <div className="right">
                     <h5>Matched to your needs accordingly.</h5>
-                    <p className="m-0">Avail tailored, service-specific options according to your precise needs and preferences.</p>
+                    <p className="m-0">Avail tailored, service-specific options according to your precise needs.</p>
                   </div>
                 </div>
                 <div className="bragSection">
@@ -109,7 +109,7 @@ function About() {
                   </div>
                   <div className="right">
                     <h5>Customer support at every step.</h5>
-                    <p>Get service from trusted and verified partner with professional skills and experience.</p>
+                    <p>Get service from trusted and verified partner with professional skills.</p>
                   </div>
                 </div>
               </div>

@@ -1,99 +1,14 @@
-/* .hearder_main,
-.triangle_home_main {
-    /* background: linear-gradient(#d1e3fc 55%, #f3f8ff 75%, #fafbfd 100%) */
-
-    /* background: linear-gradient(#d1e3fc 55%, #f3f8ff) */
- 
-.homeurban{
-    background: linear-gradient(#d1e3fc 55%, #f3f8ff )
-
+.homeurban {
+    background: linear-gradient(#d1e3fc 55%, #f3f8ff);
 }
-
-
-/* ---------------------- Header.jsx----------------------------*/
-/* .hearder_sub_main {
-    display: flex;
-}
-
-.box {
-    display: grid;
-    place-items: center;
-}
-
-.button_hearder {
-    padding: 15px;
-    border-radius: 22px;
-    width: max-content;
-    border-style: none;
-    outline-style: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
-        0 -1px 2px rgba(0, 0, 0, 0.420);
-    font-size: larger;
-    background-color: rgba(65, 105, 225, 0.26);
-    font-weight: 500;
-}
-
-.button_hearder:hover {
-    background-color: royalblue;
-    color: white;
-    font-weight: 600;
-
-}
-
-.button_hearder:active {
-    background-color: rgba(65, 225, 105, 0.39);
-    color: black;
-
-}
-
-.img_count {
-    position: absolute;
-    bottom: 18%;
-    right: 18%;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.945);
-    padding: 12px;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.420),
-        0 -1px 6px rgba(0, 0, 0, 0.420);
-}
-
-.img_count div {
-    margin: 10px;
-}
-
-.para {
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-}
-
-.countval,
-h4 {
-    margin: 10px 0;
-}
-
-.rec_ico {
-    height: 40px;
-    width: 40px;
-    fill: #3B82F6;
-    border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.420),
-        0 -1px 2px rgba(0, 0, 0, 0.420);
-} */
 
 
 
 /* ----------------------pop up.jsx----------------------------*/
 
 .modal {
-    z-index: 999999999
+    z-index: 999999999;
 }
-
-
 
 .header {
     display: flex;
@@ -101,36 +16,34 @@ h4 {
     gap: 10px;
 }
 
-
-
 .model_flot_search {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.324);
     display: flex;
     width: 100%;
     align-items: center;
     border-radius: 8px;
-    padding: 10px;
+    padding: 2px 5px;
 }
 
 .search_bar {
     border-style: none;
     padding-left: 10px;
-    font-size: x-large;
+    font-size: large;
 }
 
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
 }
 
 .search_bar:focus {
-
-    border-style: none;
     outline-style: none;
+
 }
 
-.search_bar:focus>.model_flot_search {
-    border: 1px solid green;
+
+#view-disable-main {
+    display: block;
 }
 
 .modal-body {
@@ -140,55 +53,66 @@ h4 {
 }
 
 .body {
-    border: 1px solid black;
     border-radius: 8px;
 }
 
 .all_citys {
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
-
 .list_icon {
-    width: auto;
+    height: 45px;
+    width: 45px;
 }
 
 .all_citys ol li {
     display: flex;
     flex-direction: column;
-    column-gap: 3px;
+    /* column-gap: 3px; */
+    width: 100%;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .model_flot_label {
-    padding: 10px;
-    font-weight: 600;
-    font-size: x-large;
+    padding: 0 5px;
+    margin: 0;
+    font-weight: 650;
+    font-size: large;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* .modal-content {
-    position: relative;
-    top: 60px;
-    left: -200px;
-    display: flex;
-    flex-direction: column;
-    height: 680px;
-    width: 900px;
-
-} */
+        position: relative;
+        top: 60px;
+        left: -200px;
+        display: flex;
+        flex-direction: column;
+        height: 680px;
+        width: 900px;
+    
+    } */
 
 .all_citys ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    column-gap: 25px;
+
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .hr_model {
     border: 2px solid black;
-    margin: 0;
+    margin: 10px 0;
+
 }
 
-.all_citys_body {}
+#showneed {
+    display: block;
+    overflow-y: scroll;
+}
 
 .all_citys_body_h4 {
     padding: 0;
@@ -202,23 +126,9 @@ h4 {
     gap: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------Triangle_Hom.jsx----------------------------*/
 .triangle_home_sub {
-    width: 50%
+    width: 50%;
 }
 
 .home_list {
@@ -234,7 +144,7 @@ h4 {
     display: flex;
     margin: 5px;
     padding: 15px;
-    /* gap: 10px; */
+
     flex-direction: column;
 }
 
@@ -245,7 +155,7 @@ h4 {
     width: 34%;
     border-radius: 20px;
     margin: 5px;
-    background-color: #E5E7EB;
+    background-color: #e5e7eb;
 }
 
 #Col_800 {
@@ -255,7 +165,7 @@ h4 {
 /* ----------------------Triangle_App.jsx----------------------------*/
 .Triangle_app_main {
     padding: 20px 0;
-    background: linear-gradient(#f3f8ff 55%, #fdfdfd 75%)
+    background: linear-gradient(#f3f8ff 55%, #fdfdfd 75%);
 }
 
 .img_center_text {
@@ -268,7 +178,6 @@ h4 {
     /* mix-blend-mode: multiply; */
     height: 500px;
     width: 500px;
-
 }
 
 .app_main {
@@ -310,9 +219,11 @@ h4 {
     /* padding: 20px 20px 20px 45px; */
     align-items: center;
 }
-.cardBody{
+
+.cardBody {
     background-color: rgb(240, 239, 239);
 }
+
 .cardsl {
     width: 98%;
 }
@@ -321,56 +232,48 @@ h4 {
 .container_contaus {
     text-align: center;
     padding: 0px 10px !important;
-
 }
-
 
 .inconsty {
     height: 50px;
     width: 50px;
 }
 
+.class-button-fixed {
+    width: 100%;
+
+}
+
+.class-button-fixed button {
+    width: 100% !important;
+    border-radius: 0;
+}
+
 /* ---------------------- other home.jsx----------------------------*/
 
+@media screen and (max-width: 799px) {
 
-@media screen and (max-width : 799px) {
-    /* ---------------------- Header.jsx----------------------------*/
-
-    /* .hearder_sub_main {
-        display: flex;
-        flex-direction: column-reverse;
-
-    } */
-
-
-
-
-
-
-
-    /* ---------------------- popup.jsx----------------------------*/
-
+    .mobile-view-button {
+        border-radius: 8px !important;
+    }
 
     .cardsl {
         width: 98%;
     }
 
     .all_citys {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .all_citys ol {
-
         display: flex;
         width: 100%;
         flex-direction: column;
         row-gap: 10px;
         margin-top: 10px;
-
     }
 
     .list_icon {
@@ -378,35 +281,21 @@ h4 {
     }
 
     .all_citys ol li {
-
         padding: 10px;
         width: 100%;
         border: 1px solid black;
+    }
 
+    #view-disable-main {
+        display: none;
     }
 
     .cards {
         padding: 0 !important;
         align-items: center;
-
-
     }
 
 
-    .modal-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        pointer-events: none;
-        pointer-events: auto;
-        outline: 0;
-        position: relative;
-
-        left: 0;
-
-
-    }
 
     .row_res {
         row-gap: 5px;
@@ -431,17 +320,9 @@ h4 {
         row-gap: 10px;
     }
 
-   
-
-
-
-
-
     /* ----------------------Triangle_Hom.jsx----------------------------*/
 
-
     .triangle_home_sub {
-
         width: 100%;
     }
 
@@ -489,4 +370,16 @@ h4 {
         margin: 0px;
         padding: 0px;
     }
+}
+
+.cityname-div {
+    height: 7rem;
+    padding-left: 30px;
+    overflow-y: scroll;
+
+
+}
+
+.cityname-div::-webkit-scrollbar {
+    display: none;
 }

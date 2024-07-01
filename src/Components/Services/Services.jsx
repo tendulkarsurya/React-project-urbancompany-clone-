@@ -15,7 +15,7 @@ const Services = () => {
         <div>
             <Service_top></Service_top>
             <Header />
-            <Service_container></Service_container>
+            <Service_container ></Service_container>
             <Footerf />
         </div>
     )

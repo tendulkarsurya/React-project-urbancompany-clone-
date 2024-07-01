@@ -63,11 +63,22 @@
     justify-content: space-evenly;
     align-items: center;
 }
+/* .rytimage{
+    display: none;
+    visibility: hidden;
+} */
 
 @media screen and (max-width:799px) {
+    .servicecontainer{
+        border: none !important;
+    }
     .rytimage img {
         width: 100%;
         height: 100%;
+    }
+    .rytimage{
+        display: none;
+        visibility: hidden;
     }
 
     .homeService {

@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+
 
 const Interior = () => {
     useEffect(() => {
@@ -23,7 +25,7 @@ const Interior = () => {
                     Our expert designers and craftsmen bring your dream home to life, blending style and functionality seamlessly.</p>
             </div>
             <div className='ac_service_cards' data-aos="fade-up">
-                <Row xs={1} md={4} className="g-2 ">
+                <Row xs={2} md={4} className="g-2 ">
                     
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col key={idx}>
@@ -70,7 +72,7 @@ const Interior = () => {
                                 <Card className='card'>
                                     <Card.Img className='card_animation' variant="top" src="./Assets/interior-service4.jpg" />
                                     <Card.Body>
-                                        <Card.Title>House Painting & Design</Card.Title>
+                                        <Card.Title>House Painting</Card.Title>
                                         {/* <Card.Text>
                                         This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit
@@ -86,40 +88,39 @@ const Interior = () => {
             <div className='ac_service_grid'>
                 <Container className='ac_grid_container'>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>
-                            Lighting Services</Col>
-                        <Col xs={6} className='grids'>Wallpaper Covering</Col>
-                        <Col className='grids'>False Ceiling</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Lighting Services</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Wallpaper Covering</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>False Ceiling</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Waterproofing Services</Col>
-                        <Col xs={6} className='grids'>Furniture Assembly</Col>
-                        <Col className='grids'>Texture Painting</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Waterproofing Services</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Furniture Assembly</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Texture Painting</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Office Painting</Col>
-                        <Col xs={6} className='grids'>Landscaping
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Office Painting</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Landscaping</Link>
                         </Col>
-                        <Col className='grids'>Bathroom Renovation</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Bathroom Renovation</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Kitchen Renovation</Col>
-                        <Col xs={6} className='grids'>Aluminium Fabrication</Col>
-                        <Col className='grids'>Steel Fabrication Service</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Kitchen Renovation</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Aluminium Fabrication</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Steel Fabrication Service</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Home Renovation
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Home Renovation</Link>
                         </Col>
-                        <Col xs={6} className='grids'>Marble Polishing
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Marble Polishing</Link>
                         </Col>
-                        <Col className='grids'>Window Blinds Installation</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Window Blinds Installation</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Tile Fitting Service
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Tile Fitting Service</Link>
                         </Col>
-                        <Col xs={6} className='grids'>Glass Fabrication Service
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Glass Fabrication Service</Link>
                         </Col>
-                        <Col className='grids'>Gardening Services</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Gardening Services</Link></Col>
                     </Row>
 
                 </Container>

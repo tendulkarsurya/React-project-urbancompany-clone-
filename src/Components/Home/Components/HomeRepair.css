@@ -27,6 +27,9 @@
         width: 95%;
     }
     .repairCaro p{
-       text-align: center;
+       text-align: start;
+       width: 90%;
+    font-weight: 500;
+    font-size: 14px;
     }
 }

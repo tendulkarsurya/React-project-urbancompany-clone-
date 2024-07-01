@@ -11,7 +11,7 @@ import Rowater from './Components/Rowater'
 import Smartlock from './Components/Smartlock'
 import HomeRepair from './Components/HomeRepair'
 import Noteworthy from './Components/Noteworthy'
-const Home = () => {
+const Home = (props) => {
     useEffect(()=>{
         window.scrollTo(0,0)
     },[])
@@ -19,7 +19,7 @@ const Home = () => {
         <div >
             <div className='homeurban'>
                 <Container >
-                    <Popup />
+                    <Popup data1 = {props.datapop}/>
                     <Homeurban></Homeurban>
                     <Homecarousel></Homecarousel>
                     <Cards />

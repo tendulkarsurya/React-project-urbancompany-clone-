@@ -7,6 +7,7 @@ const Rowater = () => {
     <div>
       <div className='RowaterDiv' >
         <img className='pt-5' style={{width:"100%"}} src="./Assets/ro-water.jpg" alt="" />
+   
       </div>
     </div>
   )

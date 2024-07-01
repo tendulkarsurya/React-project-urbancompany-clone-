@@ -1,60 +1,109 @@
 import { useEffect, useState } from "react";
-// import Button from "react-bootstrap/Button";
+
 import Modal from "react-bootstrap/Modal";
 import { LiaSearchLocationSolid } from "react-icons/lia";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Data from "./PopupData";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-function Popup() {
-  const [isDesktop, setIsDesktop] = useState(true);
+import DataLocation from "./DataLocation.jsx";
+import Cityname from "./Cityname.jsx";
+import MobilePopUp from "./MobilePopUp.jsx";
 
 
-
+function Popup(props) {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [cityname, allcityname] = useState([]);
+  const [button, changebutton] = useState(false);
+  const [popupshow, setpopupshow] = useState(false);
+  const [search, changeSearch] = useState("");
+  const values = "xl-down";
+  let serpop = props.data1
   const handleResize = () => {
     const width = window.innerWidth;
     if (width <= 799) {
-      console.log('hai');
-      setIsDesktop(false)
+      setIsDesktop(false);
+      changebutton(true);
     } else {
-      console.log('lol');
-      setIsDesktop(true)
+      changebutton(false);
 
+      setIsDesktop(true);
     }
-  }
+  };
+  console.log(serpop);
 
+  // if (serpop) {
+  //   setIsDesktop(false)
+  // }else{
+  //   setIsDesktop(true)
+  // }
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    handleResize();
+    // return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  function foucsechange(e) {
+    let disableview = document.getElementById("view-disable-main");
+    let show = document.getElementById("showneed");
 
-  const values = "xl-down";
-  const [show, setShow] = useState(isDesktop);
+    const width = window.innerWidth;
+    if (width >= 799) {
+      if (disableview.style.display === "none") {
+        disableview.style.display = "block";
+      } else {
+        disableview.style.display = "none";
+      }
+    }
 
-
-  let [search, changeSearch] = useState('')
-
-
-  const filteredData = Data.filter((item) =>
-    item.City.toLowerCase().includes(search.toLowerCase())
-  );
+    if (show.style.display === "block") {
+      show.style.display = "none";
+    } else {
+      show.style.display = "block";
+    }
+  }
 
   function textchange(e) {
+    changeSearch(e.target.value);
 
-    changeSearch(e.target.value)
+    allcityname(
+      Cityname.filter((city) =>
+        city.toLowerCase().includes(search.toLowerCase())
+      ))
 
+  }
+
+  function foucsechangelol(e) {
+    // setTimeout(() => {
+    //   e.target.value = "";
+    // }, 500);
+  }
+
+  function searchpopup(params) {
+    if (popupshow === false) {
+      setpopupshow(true)
+    } else {
+      setpopupshow(false)
+    }
+
+    console.log(55);
+    console.log(popupshow);
+    console.log(55);
   }
 
   return (
     <div className="popup_home_main">
-      <Modal show={show} fullscreen={values} size="lg">
+      <div className="text-center fixed-bottom class-button-fixed p-2 bg-white ">
+        {button && <button className="btn btn-primary text-center mobile-view-button " onClick={searchpopup}>Select your location</button>}
+        {popupshow && <MobilePopUp data={popupshow} />}
+      </div>
+      <Modal show={isDesktop} fullscreen={values} size="lg">
         <Modal.Header
           closeButton
           onClick={() => {
-            setShow(false);
+
+            setIsDesktop(false);
           }}
         >
           <Modal.Title>
@@ -67,7 +116,7 @@ function Popup() {
         </Modal.Header>
         <Modal.Body>
           <div class="header">
-            <div class="model_flot_label">Where do you need ? </div>
+            <div class="model_flot_label">Where do you need Service ? </div>
             <div class="model_flot_search">
               <LiaSearchLocationSolid className="icon " />
               <input
@@ -76,123 +125,89 @@ function Popup() {
                 required=""
                 style={{ width: "100%" }}
                 placeholder="Search for your city"
-                onChange={textchange}
+                onKeyDown={textchange}
+                onFocusCapture={foucsechange}
+                onBlur={(e) => {
+                  foucsechange(e);
+                  foucsechangelol(e);
+                }}
               />
             </div>
           </div>
-          <div className="body">
-            <div className="all_citys">
-              <ol>
-                {/* <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/bangalore.png"
-                    alt=""
-                  />
-                  Bangalore
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/chennai.avif"
-                    alt=""
-                  />
-                  Chennai
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/hyderabad.png"
-                    alt=""
-                  />
-                  Hyderabad
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/mumbai.avif"
-                    alt=""
-                  />
-                  Mumbai
-                </li>
-                <li>
-                  <img className="list_icon" src="../Assets/pune.png" alt="" />
-                  Pune
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/delhi.avif"
-                    alt=""
-                  />
-                  Delhi
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/ahmedabad.avif"
-                    alt=""
-                  />
-                  Ahmedabad
-                </li>
-                <li>
-                  <img
-                    className="list_icon"
-                    src="../Assets/kolkata.avif"
-                    alt=""
-                  />
-                  Kolkata
-                </li> */}
-                {filteredData.map(item => (
-                 <a href="" key={item} style={{textDecoration:"none",color:"black"}}>
-                   <li >
-                    <img src={item.logo} alt={item.City} />
-                    {item.City}
-                  </li>
-                 </a>
-                ))}
-              </ol>
-
+          <div id="view-disable-main">
+            <div className="body">
+              <div className="all_citys ">
+                <ol>
+                  {DataLocation.map((item) => (
+                    <a
+                      href="/"
+                      className="disable-view"
+                      key={item}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      <li id="search-city " className="search-city  ">
+                        <img
+                          className="list_icon "
+                          src={item.logo}
+                          alt={item.City}
+                        />
+                        {item.City}
+                      </li>
+                    </a>
+                  ))}
+                </ol>
+              </div>
             </div>
-            <div>
 
+            <hr className="hr_model " />
+            <div className="all_citys_body ">
+              <h4 className="all_citys_body_h4">Other Citys</h4>
+              <Container className="all_citys_body_container " id="citysall">
+                <a href="" className="text-decoration-none text-black ">
+                  <Row xs={1} md={4} className="row_res">
+                    <Col>Coimbatore</Col>
+                    <Col>Gurgaon</Col>
+                    <Col>Jaipur</Col>
+                    <Col>Kochi</Col>
+                  </Row>
+
+                  <Row xs={1} md={4} className="row_res">
+                    <Col>Lucknow</Col>
+                    <Col>Madurai</Col>
+                    <Col>Mysore</Col>
+                    <Col>Noida</Col>
+                  </Row>
+                  <Row xs={1} md={4} className="row_res">
+                    <Col>Trivandrum</Col>
+                    <Col>Warangal</Col>
+                    <Col>Tirupati</Col>
+                    <Col>Vijaywada</Col>
+                  </Row>
+                  <Row xs={1} md={4} className="row_res">
+                    <Col>Visakhapatnam</Col>
+                    <Col>Bhubaneswar</Col>
+                  </Row>
+                </a>
+              </Container>
             </div>
           </div>
-          <hr className="hr_model" />
-          <div className="all_citys_body" >
-            <h4 className="all_citys_body_h4">Other Citys</h4>
-            <Container className="all_citys_body_container">
-              <Row xs={1} md={4} className="row_res">
-                <Col>Coimbatore</Col>
-                <Col >Gurgaon</Col>
-                <Col>Jaipur</Col>
-                <Col>Kochi</Col>
-              </Row>
-
-              <Row xs={1} md={4} className="row_res">
-                <Col>Lucknow</Col>
-                <Col>Madurai</Col>
-                <Col>Mysore</Col>
-                <Col>Noida</Col>
-              </Row>
-              <Row xs={1} md={4} className="row_res">
-                <Col>Trivandrum</Col>
-                <Col>Warangal</Col>
-                <Col>Tirupati</Col>
-                <Col>Vijaywada</Col>
-              </Row>
-              <Row xs={1} md={4} className="row_res">
-                <Col>Visakhapatnam</Col>
-                <Col>Bhubaneswar</Col>
-
-              </Row>
-            </Container>
-
+          <div className="text-center" id="showneed">
+            <ol className="list-unstyled d-flex flex-column ">
+              {cityname.map((items) => (
+                <a
+                  href="/"
+                  key={items.id}
+                  className="text-decoration-none text-black "
+                  style={{ cursor: "pointer" }}
+                >
+                  <li className="border p-1 m-2">{items.toUpperCase()} </li>
+                </a>
+              ))}
+            </ol>
           </div>
-
         </Modal.Body>
       </Modal>
-    </div >
+    </div>
   );
 }
 

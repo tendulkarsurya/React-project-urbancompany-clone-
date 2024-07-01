@@ -101,6 +101,8 @@ h4 {
         flex-direction: column-reverse;
     }
 
+    
+
     /* ---------------------- Header.jsx----------------------------*/
 
 }
@@ -232,17 +234,18 @@ h4 {
     border-radius: 5px;
     background-color: #DBEAFE;
 }
+.servicebtns{
+    text-decoration: none;
+    color: black;
+}
 
 .grid_rows {
     gap: 14px;
     padding: 7px;
+   /* width: 100%; */
 }
 
-.grid_rows a {
-    width: 100%;
-    text-decoration: none;
-    color: black;
-}
+
 
 .ac_grid_container {
     width: 100%;
@@ -273,7 +276,7 @@ h4 {
     }
 
     #cardHeight {
-        height: 230px;
+        height: 113px;
     }
 }
 

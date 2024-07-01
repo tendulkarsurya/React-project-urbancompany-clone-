@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+
 
 const Home_Maintenance = () => {
     useEffect(() => {
@@ -22,7 +24,7 @@ const Home_Maintenance = () => {
                     tackle everything from minor fixes to major overhauls, keeping your living space safe and comfortable.</p>
             </div>
             <div className='ac_service_cards' data-aos="fade-up">
-                <Row xs={1} md={4} className="g-2 ">
+                <Row xs={2} md={4} className="g-2 ">
                     
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col key={idx}>
@@ -86,15 +88,14 @@ const Home_Maintenance = () => {
             <div className='ac_service_grid'>
                 <Container className='ac_grid_container'>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>
-                            Bird Net</Col>
-                        <Col xs={6} className='grids'>Sofa Repair</Col>
-                        <Col className='grids'>Wood Polish</Col>
+                        <Col className='grids'> <Link to='/ServiceNavigation' className='servicebtns'>Bird Net</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Sofa Repair</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Wood Polish</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Ceiling Cloth Hanger Installation</Col>
-                        <Col xs={6} className='grids'>Invisible Gril</Col>
-                        <Col className='grids'>Pigeon Net</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Ceiling Cloth Hanger Installation</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Invisible Gril</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Pigeon Net</Link></Col>
                     </Row>
 
                 </Container>

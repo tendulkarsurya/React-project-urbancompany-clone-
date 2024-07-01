@@ -1,0 +1,91 @@
+.serviceNavigation {
+    background: linear-gradient(#f3f8ff, white);
+    /* background-color: #f3f8ff; */
+}
+
+
+
+.custfeedback {
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #F9FAFB;
+    line-height: 20px;
+}
+
+.feedbackContact {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 25%;
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    background-color: #3B82F6;
+}
+
+/* -----------findMyProbtn---------------- */
+
+.findMyProbtn {
+    padding: 8px;
+    border: none;
+    background-color: #3B82F6;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 13px;
+}
+
+.findMyPro_Stick {
+    position: sticky;
+    top: 80px;
+
+}
+
+
+@media screen and (max-width:799px) {
+    .feedbackimg {
+        padding: 0 !important;
+        width: 38%;
+    }
+
+    .feedbackimg img {
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .feedbackHead {
+        padding: 10px !important;
+        width: 100%;
+    }
+
+    .feedbackPara {
+        padding: 0 !important;
+        width: 130%;
+        position: relative;
+        left: -80px;
+        top: 20px;
+        line-height: 10px;
+    }
+
+    .feedbackContact {
+        font-size: 14px;
+    }
+
+    .feedbackMain {
+        margin-top: 5px !important;
+    }
+
+    .findMyPro_Stick {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+input {
+    border-style: none;
+    outline-style: none;
+    padding: 8px;
+    border-radius: 8px;
+}

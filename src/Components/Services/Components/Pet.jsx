@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+
 
 const Pet = () => {
     useEffect(() => {
@@ -22,7 +24,7 @@ const Pet = () => {
                     to provide personalized care, training, and grooming for your beloved pets in a safe and nurturing environment.</p>
             </div>
             <div className='ac_service_cards ' data-aos="fade-up">
-                <Row xs={1} md={4} className="g-2 ">
+                <Row xs={2} md={4} className="g-2 ">
                     
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col key={idx}>
@@ -83,8 +85,8 @@ const Pet = () => {
                 <Container className='ac_grid_container'>
                     <Row md={4} className='grid_rows'>
                         <Col className='grids'>
-                            Pet Care</Col>
-                        <Col xs={6} className='grids'>Vets</Col>
+                            <Link to='/ServiceNavigation' className='servicebtns'>Pet Care</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Vets</Link></Col>
                     </Row>
 
 

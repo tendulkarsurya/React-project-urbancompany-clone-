@@ -23,7 +23,7 @@ const Contactus = () => {
           reach. Become a member now!
         </p>
         <button class="btn btn-primary" onClick={handleShow}>
-          Contact us
+          Become a Partner
         </button>
       </Container  >
       <Modal show={show} onHide={handleClose} size="md">

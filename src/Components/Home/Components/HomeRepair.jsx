@@ -19,7 +19,7 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 2
+        items: 3
     }
 };
 const HomeRepair = () => {
@@ -55,7 +55,7 @@ const HomeRepair = () => {
                 </div>
                 <div className='p-3 repairCaro'>
                     <div className='imageDiv'><img className='' src="./Assets/home-repair7.jpg" alt="" /></div>
-                    <p>Switchbox/Switchboard Repair</p>
+                    <p>Switchboard Repair</p>
                 </div>
                 <div className='p-3 repairCaro'>
                     <div className='imageDiv'><img className='' src="./Assets/home-repair8.jpg" alt="" /></div>

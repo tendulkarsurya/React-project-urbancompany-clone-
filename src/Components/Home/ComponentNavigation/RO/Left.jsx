@@ -1,8 +1,10 @@
 import React from 'react'
 import { MdStars } from "react-icons/md";
+import { useNavigate } from 'react-router-dom'
 
 
 const Left = () => {
+    const navi = useNavigate()
     return (
         <div className='stick'>
             <div >
@@ -11,10 +13,10 @@ const Left = () => {
             </div>
             <div className='d-grid gap-3 m-2 ' >
                 <button className='left_below_but text-truncate'>Compare Native RO vs others</button>
-                <button onClick={()=>window.scrollTo(0,0)} className='left_below_but_ser' >View Services</button>
-            </div>
+                <button onClick={()=> navi("/services")} className='left_below_but_ser' >View Services</button>
+            </div >
 
-        </div>
+        </div >
     )
 }
 

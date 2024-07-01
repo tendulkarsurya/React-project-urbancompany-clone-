@@ -1,6 +1,6 @@
 .main_welcome_page {
     height: 87.5vh;
-    background: linear-gradient(#D1E3FC, #eef5ff);
+    background: linear-gradient(#ffffff, #ffffff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    box-shadow: 0 1px 5px rgb(0, 0, 0);
+    box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.320)
+        /* 0 0.5px 5px rgba(0, 0, 0, 0.320),
+        0 0.5px 5px rgba(0, 0, 0, 0.320),
+        0 0.5px 15px rgba(0, 0, 0, 0.320); */
 
 }
 
@@ -36,7 +39,7 @@
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     backface-visibility: hidden;
 }
@@ -69,13 +72,18 @@
 
 }
 
-input {
+
+
+.signup form input,
+.login form input {
     border-style: none;
     width: 90%;
     outline-style: none;
     padding: 8px;
     border-radius: 8px;
+    background-color: rgba(72, 72, 72, 0.092);
 }
+
 
 .userName {
     width: 100%;
@@ -92,7 +100,8 @@ input {
     top: 6px;
 }
 
-.butn1,.butn2 {
+.butn1,
+.butn2 {
     padding: 8px 12px;
     border-style: none;
     outline-style: none;

@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+
 const Cleaning = () => {
 
     useEffect(() => {
@@ -22,7 +24,7 @@ const Cleaning = () => {
                 <p>Experience pristine living spaces with our top-notch cleaning services, tailored to meet your unique needs. Trust our skilled professionals to transform your home into a haven of cleanliness and comfort.</p>
             </div>
             <div className='ac_service_cards' data-aos="fade-up">
-                <Row xs={1} md={4} className="g-2 ">
+                <Row xs={2} md={4} className="g-2 ">
                     
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col key={idx}>
@@ -84,28 +86,27 @@ const Cleaning = () => {
             <div className='ac_service_grid'>
                 <Container className='ac_grid_container'>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>
-                            Floor Cleaning</Col>
-                        <Col xs={6} className='grids'>Kitchen Cleaning</Col>
-                        <Col className='grids'>Swimming Pool Cleaning</Col>
+                        <Col className='grids'> <Link to='/ServiceNavigation' className='servicebtns'>Floor Cleaning</Link> </Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Kitchen Cleaning</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Swimming Pool Cleaning</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Sump Cleaning</Col>
-                        <Col xs={6} className='grids'>Office Cleaning</Col>
-                        <Col className='grids'>Commercial Sofa Cleaning</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Sump Cleaning</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Office Cleaning</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Commercial Sofa Cleaning</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Septic Tank Cleaning Services</Col>
-                        <Col xs={6} className='grids'>Carpet Cleaning</Col>
-                        <Col className='grids'>Mattress Cleaning</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Septic Tank Cleaning Services</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Carpet Cleaning</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Mattress Cleaning</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Deep House Cleaning</Col>
-                        <Col xs={6} className='grids'>Daily Cleaning (Maids)</Col>
-                        <Col className='grids'>Dry Cleaning</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Deep House Cleaning</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Daily Cleaning (Maids)</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Dry Cleaning</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Window Cleaning</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Window Cleaning</Link></Col>
                     </Row>
                 </Container>
             </div>

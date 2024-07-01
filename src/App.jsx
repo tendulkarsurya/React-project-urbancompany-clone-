@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Nav2 from './Components/Nav/Nav2'
@@ -17,13 +17,15 @@ import Cart from './Components/Home/ComponentNavigation/Cart'
 import RightNavigation from './Components/Home/ComponentNavigation/RightNavigation'
 import Welcome from './Components/Welcome/Welcome'
 import OrderSummary from './Components/Home/ComponentNavigation/Order/OrderSummary'
-
+import ServiceNavigation from './Components/Services/Components/ServiceNavigation/ServiceNavigation'
 const App = () => {
+
+  let [popup,showpopup] = useState(false)
   return (
     <BrowserRouter>
       <Nav2 />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home datapop = {popup} />} />
         <Route path='/contactus' element={<Contactus />} />
         <Route path='/services' element={<Services />} />
         <Route path='/about' element={<About />} />
@@ -40,6 +42,8 @@ const App = () => {
         <Route path='/welcome' element={<Welcome/>} />
         <Route path='/OrderSummary' element={<OrderSummary/>} />
         
+        <Route path='/ServiceNavigation' element={<ServiceNavigation  datapop={showpopup} />} />
+
       </Routes>
     </BrowserRouter>
 

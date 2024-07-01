@@ -50,7 +50,7 @@ const Welcome = () => {
             <div className='Mainpage' ref={main}>
 
                 <div className='login'>
-                    <h3>
+                    <h3 className='p-3'>
                         Log In
                     </h3>
 
@@ -73,7 +73,7 @@ const Welcome = () => {
 
                 </div>
                 <div className='signup'>
-                    <h3>Sign Up</h3>
+                    <h3 className='p-3'>Sign Up</h3>
 
                     <form action="">
 

@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
+
 
 const Pest_service = () => {
     useEffect(() => {
@@ -21,7 +23,7 @@ const Pest_service = () => {
                 <p>Safeguard your home from unwanted intruders with our effective pest control and fumigation solutions. Our expert technicians eliminate infestations and create a safe, pest-free environment for you and your family.</p>
             </div>
             <div className='ac_service_cards' data-aos="fade-up" >
-                <Row xs={1} md={4} className="g-2 ">
+                <Row xs={2} md={4} className="g-2 ">
                     
                         {Array.from({ length: 1 }).map((_, idx) => (
                             <Col key={idx}>
@@ -68,7 +70,7 @@ const Pest_service = () => {
                                 <Card className='card'>
                                     <Card.Img className='card_animation' variant="top" src="./Assets/pest-control-4.jpg" />
                                     <Card.Body>
-                                        <Card.Title>Termite Control Treatment</Card.Title>
+                                        <Card.Title>Termite Control </Card.Title>
                                         {/* <Card.Text>
                                         This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit
@@ -85,17 +87,17 @@ const Pest_service = () => {
                 <Container className='ac_grid_container'>
                     <Row md={4} className='grid_rows'>
                         <Col className='grids'>
-                            Ant Control Treatment</Col>
-                        <Col xs={6} className='grids'>Mosquito Control Treatment</Col>
-                        <Col className='grids'>Rodent Control Treatment</Col>
+                            <Link to='/ServiceNavigation' className='servicebtns'>Ant Control Treatment</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Mosquito Control Treatment</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Rodent Control Treatment</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Honeybee/Beehive Control</Col>
-                        <Col xs={6} className='grids'>General Pest Control</Col>
-                        <Col className='grids'>Virus Fumigation</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Honeybee/Beehive Control</Link></Col>
+                        <Col xs={6} className='grids'><Link to='/ServiceNavigation' className='servicebtns'>General Pest Control</Link></Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Virus Fumigation</Link></Col>
                     </Row>
                     <Row md={4} className='grid_rows'>
-                        <Col className='grids'>Home Sanitization</Col>
+                        <Col className='grids'><Link to='/ServiceNavigation' className='servicebtns'>Home Sanitization</Link></Col>
                     </Row>
 
                 </Container>
